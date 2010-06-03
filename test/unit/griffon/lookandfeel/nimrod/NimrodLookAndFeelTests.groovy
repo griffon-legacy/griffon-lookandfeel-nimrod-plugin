@@ -14,25 +14,15 @@
  * limitations under the License.
  */
 
+package griffon.lookandfeel.nimrod
+
+import griffon.lookandfeel.AbstractLookAndFeelTestCase
+
 /**
  * @author Andres Almiray
  */
-class LookandfeelNimrodGriffonPlugin {
-    def version = 0.1
-    def griffonVersion = '0.3.2 > *'
-    def dependsOn = [lookandfeel: 0.1]
-    def toolkits = ['swing']
-    def license = 'Apache Software License 2.0'
-
-    def author = 'Andres Almiray'
-    def authorEmail = 'aalmiray@users.sourceforge.net'
-    def title = 'NimROD Swing Look & Feel'
-    def description = '''
-NimROD Swing Look & Feel.
-http://personales.ya.com/nimrod/index-en.html
-'''
-
-    // URL to the plugin's documentation
-    def documentation = 'http://griffon.codehaus.org/Lookandfeel+Nimrod+Plugin'
+class NimrodLookAndFeelTests extends AbstractLookAndFeelTestCase {
+    void testNimrodNimRODLookAndFeel() {
+        setAndTestLookAndFeel('Nimrod', 'NimROD')
+    }
 }
-
